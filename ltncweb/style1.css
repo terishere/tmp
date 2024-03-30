@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  position: relative;
+}
+img {
+}
+.main-header {
+  width: 100%;
+  height: 100 vh;
+  background-color: rgb(62, 158, 199);
+  position: relative;
+}
+
+.main-header > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  line-height: 50px;
+  font-size: 200%;
+  left: 45%;
+}
+.nav {
+}
+.nav .info {
+  position: relative;
+  float: right;
+  display: block;
+  width: 13%;
+  height: 50px;
+  text-align: center;
+}
+.nav .subInfo li:hover,
+.nav .info:hover {
+  background-color: #6eb2f1;
+}
+.nav .info:hover .subInfo {
+  display: block;
+}
+.nav .info a {
+  line-height: 50px;
+  width: 75%;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 110%;
+  position: relative;
+  left: 40px;
+}
+.nav .info .subInfo {
+  display: none;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.nav .info li {
+  color: black;
+  position: relative;
+}
+.nav .info ul a {
+  color: black;
+  text-align: start;
+}
+.main-header .info img {
+  /*avatar*/
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+/*---*/
+.main-header .logo {
+  width: 230px;
+  height: 50px;
+  position: relative;
+}
+.main-header .logo img {
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: block;
+  position: absolute;
+  margin: 0 5px;
+}
+.main-header .logo p {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  left: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 180%;
+  font-weight: 750;
+}
+/*sidebar*/
+.sidebar {
+  background-color: #34383d;
+  /* width: 230px; */
+  min-height: 100vh;
+  position: absolute;
+  top: 50px;
+}
+
+.sidebar-head .head-text {
+  text-align: start;
+  color: #ccc;
+  font-size: 120%;
+  font-weight: 600;
+  padding: 15px 10px;
+}
+.sidebar-head .line {
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: #3e4652;
+  position: absolute;
+  left: 10px;
+}
+.sidebar-list {
+  display: block;
+  margin-top: 5px;
+}
+.sidebar-list li {
+  line-height: 45px;
+  display: block;
+}
+.sidebar-list li:hover {
+  background-color: #626973;
+}
+.sidebar-list li:hover .sub-List {
+  display: block;
+}
+.sidebar-list .sub-List {
+  /* display: none; */
+  background-color: #4b4d51;
+  display: none;
+}
+.sidebar-list .sub-List li {
+  line-height: 45px;
+}
+.sidebar-list .sub-List a {
+  /* display: none; */
+  font-size: 90%;
+  margin: 40px;
+}
+.sidebar-list a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 600;
+  margin: 20px;
+}
+.content {
+  background-color: black;
+  border: 5px solid black;
+}

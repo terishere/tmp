@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* 1fr for sidebar, 3fr for content */
+  grid-template-rows: auto 1fr auto; /* auto for header and footer, 1fr for content */
+  gap: 10px;
+  height: 100vh; /* 100% viewport height */
+}
+
+.header,
+.sidebar,
+.content,
+.footer {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.header {
+  grid-column: 1 / 3; /* spans across both columns */
+}
+
+.sidebar {
+  grid-row: 2 / 4; /* spans from row 2 to row 4 */
+}
+
+.content {
+  grid-column: 2 / 3;
+}
+
+.footer {
+  grid-column: 1 / 3;
+}
